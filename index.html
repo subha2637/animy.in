@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="main.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <!--nave-->
+  <nav>
+    <div class="navbar">
+      <img src="img/Crunchyroll.svg (3).webp" class='App-logo' alt='logo' />
+      <ul class="menu">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Category">Category</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#Feedback">Feedback</a></li>
+      </ul>
+      <!--searchber-->
+
+      <div class="searchbar">
+        <div class="searchbar-wrapper">
+          <div class="searchbar-left">
+            <div class="search-icon-wrapper">
+              <span class="search-icon searchbar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                  </path>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="searchbar-center">
+            <div class="searchbar-input-spacer"></div>
+
+            <input type="text" class="searchbar-input" maxlength="2048" name="q" autocapitalize="off" autocomplete="off"
+              title="Search" role="combobox" placeholder="Search ">
+          </div>
+
+          <div class="searchbar-right">
+            <svg class="voice-search" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill="#4285f4"
+                d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z">
+              </path>
+              <path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path>
+              <path fill="#fbbc05"
+                d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z">
+              </path>
+              <path fill="#ea4335"
+                d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!--save button-->
+      <button class="bookmarkBtn">
+        <span class="IconContainer">
+          <svg viewBox="0 0 384 512" height="0.9em" class="icon">
+            <path
+              d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z">
+            </path>
+          </svg>
+        </span>
+        <p class="text">Save</p>
+      </button>
+      <!--user-->
+
+      <label class="popup">
+        <input type="checkbox" />
+        <div tabindex="0" class="burger">
+          <svg viewBox="0 0 24 24" fill="white" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z">
+            </path>
+          </svg>
+        </div>
+        <div class="popup-window">
+          <ul>
+            <li>
+              <button>
+                <span>Log In</span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <span>Sign Up</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </label>
+    </div>
+  </nav>
+  <!---section-2-->
+  <div class="section-2">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="img/6ae9dd5f-b5da-4908-a333-4a1f48882613.webp" alt="Image 1">
+        <div class="overlay">
+          <div class="tesxt-img"><img src="img/81c4b90f-30df-41d7-bcd4-3f9402de3b41.avif" id="img-262"></div>
+          <p class="para-621">Sub | Dub<span class="span-261"> Fantasy, Romance, Shonen</span></p>
+          <p class="fast-para1">They say whatever doesn’t kill you makes you stronger, but<br>
+            that’s not the case for the world’s weakest hunter Sung Jinwoo. <br>
+            After being brutally slaughtered by monsters in a high-ranking <br>
+            dungeon, Jinwoo came back with the System, a program only....</p>
+          <button class="button-23">
+            <div class="button-overlay"></div>
+            <span>Start Watching S2 E1 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 53 58"
+                height="58" width="53">
+                <path stroke-width="9" stroke="currentColor"
+                  d="M44.25 36.3612L17.25 51.9497C11.5833 55.2213 4.5 51.1318 4.50001 44.5885L4.50001 13.4115C4.50001 6.86824 11.5833 2.77868 17.25 6.05033L44.25 21.6388C49.9167 24.9104 49.9167 33.0896 44.25 36.3612Z">
+                </path>
+              </svg></span>
+          </button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/c14cf789-d95e-44ca-b949-aa43beadcd5f.avif" alt="Image 2">
+        <div class="overlay">
+          <div class="tesxt-img"><img src="img/91fe08dd-db88-402c-a14d-f052f527c477.avif" id="img-262"></div>
+          <p class="para-621">Sub | Dub<span class="span-261"> Fantasy, Romance, Shonen</span></p>
+          <p class="fast-para1">Anos Voldigoad was a tyrannical Demon King that eradicated <br>
+            humans, spirits, and even the gods, but became bored of<br>
+            eternal warfare and reincarnated with dreams of a peaceful<br>
+            world. However, what awaited him in reincarnation after 2000 <br>
+            years were descendants who became too weak after being</p>
+          <button class="button-23">
+            <div class="button-overlay"></div>
+            <span>Start Watching S2 E1 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 53 58"
+                height="58" width="53">
+                <path stroke-width="9" stroke="currentColor"
+                  d="M44.25 36.3612L17.25 51.9497C11.5833 55.2213 4.5 51.1318 4.50001 44.5885L4.50001 13.4115C4.50001 6.86824 11.5833 2.77868 17.25 6.05033L44.25 21.6388C49.9167 24.9104 49.9167 33.0896 44.25 36.3612Z">
+                </path>
+              </svg></span>
+          </button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/a2f0200a-0562-41ea-bbba-f8777480e5e9.avif" alt="Image 3">
+        <div class="overlay">
+          <div class="tesxt-img"><img src="img/fc5f7292-5884-4ef7-a7aa-e1a50796c281.avif" id="img-262"></div>
+          <p class="para-621">Sub | Dub<span class="span-261"> Fantasy, Romance, Shonen</span></p>
+          <p class="fast-para1">Monkey. D. Luffy refuses to let anyone or anything stand in the <br>
+            way of his quest to become the king of all pirates. With a <br>
+            course charted for the treacherous waters of the Grand Line <br>
+            and beyond, this is one captain who'll never give up until he's</p>
+          <button class="button-23">
+            <div class="button-overlay"></div>
+            <span>Start Watching S2 E1 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 53 58"
+                height="58" width="53">
+                <path stroke-width="9" stroke="currentColor"
+                  d="M44.25 36.3612L17.25 51.9497C11.5833 55.2213 4.5 51.1318 4.50001 44.5885L4.50001 13.4115C4.50001 6.86824 11.5833 2.77868 17.25 6.05033L44.25 21.6388C49.9167 24.9104 49.9167 33.0896 44.25 36.3612Z">
+                </path>
+              </svg></span>
+          </button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/8ebdb253-08b9-401b-ae92-5e638987c1f6.avif" alt="Image 4">
+        <div class="overlay">
+          <div class="tesxt-img"><img src="img/76b49e2a-68ea-4a67-b15d-0a591b05f3f2.avif" id="img-262"></div>
+          <p class="para-621">Sub | Dub<span class="span-261"> Fantasy, Romance, Shonen</span></p>
+          <p class="fast-para1">Anos Voldigoad was a tyrannical Demon King that eradicated <br>
+            humans, spirits, and even the gods, but became bored of<br>
+            eternal warfare and reincarnated with dreams of a peaceful<br>
+            world. However, what awaited him in reincarnation after 2000 <br>
+            years were descendants who became too weak after being</p>
+          <button class="button-23">
+            <div class="button-overlay"></div>
+            <span>Start Watching S2 E1 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 53 58"
+                height="58" width="53">
+                <path stroke-width="9" stroke="currentColor"
+                  d="M44.25 36.3612L17.25 51.9497C11.5833 55.2213 4.5 51.1318 4.50001 44.5885L4.50001 13.4115C4.50001 6.86824 11.5833 2.77868 17.25 6.05033L44.25 21.6388C49.9167 24.9104 49.9167 33.0896 44.25 36.3612Z">
+                </path>
+              </svg></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="section-3">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="p-2">bjdfjmcjkdfhmj asfafjasfnjasfjkam sjjkasfafjkafjkjk</div>
+        </div>
+      </div>
+    </div>
+    </div>
+</body>
+<footer>
+  <!-- <script>
+    $(document).ready(function () {
+      $('.owl-carousel').owlCarousel({
+      
+        items: 1,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3000, // 3 seconds
+        autoplayHoverPause: true
+     
+      });
+    });
+  </script> -->
+
+</html>
